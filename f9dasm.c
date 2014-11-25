@@ -1705,7 +1705,8 @@ if (T & 0x80)
         {
         bGetLabel = !IS_CONST(PC - 1);
         sprintf(buf + 2, "   %c (%s)", cCommChar,
-                label_string(0, bGetLabel, (word)(PC - 1)), R);
+                //label_string(0, bGetLabel, (word)(PC - 1)), R);
+                label_string(0, bGetLabel, (word)(PC - 1)));
         }
       break;
     case 0x05:
